@@ -8,7 +8,7 @@ public class Tester {
     public static final int BYTE_LENGTH = 8;
 
     public static void main(String[] args) throws Exception {
-        try (FileReader reader1 = new FileReader("/java programming/huffman_encoding/src/message.txt")) {
+        try (FileReader reader1 = new FileReader("ENTER DIRECTORY PATH HERE")) {
             // ENCODING PROCESS
 
             // Count the frequencies of each unique character in the file
@@ -58,7 +58,7 @@ public class Tester {
 
             // Open another reader for encoding process
             System.out.println("Encoding the file... ");
-            FileReader reader2 = new FileReader("/java programming/huffman_encoding/src/message.txt");
+            FileReader reader2 = new FileReader("ENTER DIRECTORY PATH HERE");
             byte[] encdMsg = huffEncd(reader2, encdMap);
 
             // Write encdMsg to a binary file
